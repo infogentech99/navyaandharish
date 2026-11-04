@@ -1,10 +1,10 @@
 "use client";
 
 import { useState } from "react";
-import LadkeDetails from "../components/LadkeDetails";
 import LadkiDetails from "../components/LadkiDetails";
 import RoseHeroTemp from "../components/RoseHeroTemp";
 import BottomNavigation from "../components/BottomNavigation";
+
 export default function HeroSection() {
   const [selectedSide, setSelectedSide] = useState(null);
 
@@ -38,91 +38,30 @@ export default function HeroSection() {
         {/* ================= WEDDING LOGO ================= */}
         <div className="mt-8 flex flex-col items-center text-center md:mt-10">
           <img
-            src="/assets/wedding-logo.webp"
+            src="/assets/wedding-logo3.webp"
             alt="Wedding Logo"
-            className="w-[180px] sm:w-[220px] md:w-[280px]"
+            className="w-[160px] sm:w-[220px] md:w-[280px]"
           />
 
-          {/* <p className="mt-3 text-[15px] tracking-[0.15em] text-[#BC610A] sm:text-xs md:mt-5 md:text-2xl font-cormorant-garamond">
-            #ChirantakGotHisRashmiGarg
-          </p> */}
+      
         </div>
 
-        {/* ================= CHOOSE TEXT ================= */}
-        <div className="mt-14 text-center sm:mt-16 md:mt-20">
-          <p className="text-[16px] text-[#BC610A] md:text-xl font-cormorant-garamond">
-           CHOOSE THE SIDE YOU BELONG TO
-          </p>
-        </div>
+      
+        
+       
+          <div className="mt-6 w-full max-w-5xl pb-10 md:mt-16">
 
-        {/* ================= BUTTONS ================= */}
-        <div className="mt-8 flex w-full max-w-[500px] flex-col items-center justify-center gap-4 sm:flex-row md:mt-10">
-
-          {/* LADKE */}
-          <button
-            type="button"
-            onClick={() => setSelectedSide("ladke")}
-            className={`
-              w-full max-w-[220px]
-              rounded-full
-              px-8 py-3
-              text-xs tracking-[0.12em]
-              text-white
-              transition-all duration-300
-              sm:w-[200px]
-              md:w-[220px] md:py-3.5 md:text-sm
-              cursor-pointer font-cormorant-garamond
-              ${
-                selectedSide === "ladke"
-                  ? "scale-105 bg-[#BC610A] shadow-lg"
-                  : "bg-[#BC610A] hover:scale-105 hover:bg-[#BC610A]"
-              }
-            `}
-          >
-            LADKE WAALE
-          </button>
-
-          {/* LADKI */}
-          <button
-            type="button"
-            onClick={() => setSelectedSide("ladki")}
-            className={`
-              w-full max-w-[220px]
-              rounded-full
-              px-8 py-3
-              text-xs tracking-[0.12em]
-              text-white
-              transition-all duration-300
-              sm:w-[200px]
-              md:w-[220px] md:py-3.5 md:text-sm
-              cursor-pointer font-cormorant-garamond
-              ${ 
-                selectedSide === "ladki"
-                  ? "scale-105 bg-[#BC610A] shadow-lg"
-                  : "bg-[#BC610A] hover:scale-105 hover:bg-[#BC610A]"
-              }
-            `}
-          >
-            LADKI WAALE
-          </button>
-
-        </div>
-
-        {/* ================= SELECTED DETAILS ================= */}
-        {selectedSide && (
-          <div className="mt-12 w-full max-w-5xl pb-10 md:mt-16">
-
-            {selectedSide === "ladke" ? (
-              <LadkeDetails />
-            ) : (
+            
+           
+          
               <LadkiDetails />
-            )}
+           
 
           </div>
-        )}
+    
 
       </div>
-      {selectedSide && <BottomNavigation />}
+   
     </section>
   );
 }

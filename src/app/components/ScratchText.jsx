@@ -319,7 +319,7 @@ export default function ScratchText({ onReveal }) {
         color: "#8c1034",
         fontFamily: "EB Garamond, serif",
         fontWeight: 600,
-        fontSize: "25px",
+        fontSize: "22px",
         letterSpacing: ".5px",
         textShadow: "0 1px 6px rgba(255,215,0,.35)",
         padding: "0 25px",
@@ -327,8 +327,8 @@ export default function ScratchText({ onReveal }) {
     >
       <div className="text-[#BC610A]">
         <div>
-          2<sup className="text-[15px]">nd </sup>
-        December</div>
+          12<sup className="text-[15px]">th </sup> & 13<sup className="text-[15px]">th </sup>
+        November</div>
         <div>2026</div>
       </div>
     </div>

@@ -1,8 +1,8 @@
 "use client";
 
 const days = [
-  { date: "Nov", icon: "☀️", high: 31, low: 15, note: "Sunny & pleasant" },
-  { date: "Dec", icon: "🌤️", high: 30, low: 14, note: "Clear skies" },
+  { date: "12 Nov", icon: "☀️", high: 31, low: 15, note: "Sunny & pleasant" },
+  { date: "13 Nov", icon: "🌤️", high: 30, low: 14, note: "Clear skies" },
 ];
 
 const requestNames = [
@@ -27,11 +27,11 @@ export default function LadkiWeather() {
           className="text-[#BC610A] font-cormorant-garamond text-center
             md:text-5xl text-[30px] lg:text-[80px] leading-tight mt-2 font-semibold"
         >
-          Udaipur Weather
+          Bangalore Weather
         </h2>
 
         <p className="text-center italic text-[#a0575a] font-cormorant-garamond text-base md:text-lg mt-2">
-          November and December brings sunny days, pleasant afternoons and cool desert evenings.
+          November brings sunny days, pleasant afternoons and cool desert evenings.
         </p>
 
         <div className="grid grid-cols-2 md:grid-cols-2 gap-4 mt-8">
@@ -64,7 +64,7 @@ export default function LadkiWeather() {
       </div>
 
       {/* Special request card */}
-      <div
+      {/* <div
         className="w-full max-w-xl rounded-3xl bg-gradient-to-br from-[#8c1212] to-[#5c0505]
         border border-[#a8641a]/60 px-6 py-10 text-center shadow-[0_20px_50px_rgba(0,0,0,0.25)]"
       >
@@ -86,7 +86,7 @@ export default function LadkiWeather() {
    
         
         
-      </div>
+      </div> */}
     </section>
   );
 }
