@@ -14,12 +14,12 @@ const geistMono = Geist_Mono({
 
 
 export const metadata= {
-  metadataBase: new URL("https://navyaandharish.vercel.app/"),
+  metadataBase: new URL("https://navyaandharish-kappa.vercel.app/"),
 
   openGraph: {
     title: "Navya & Harish",
     description: "Join as they begin their forever. 12 & 13 November, 2026",
-    url: "https://navyaandharish.vercel.app/",
+    url: "https://navyaandharish-kappa.vercel.app/",
     siteName: "InviteArc",
     images: [
       {
@@ -40,7 +40,7 @@ export const metadata= {
   },
 
  other: {
-    "og:image:secure_url": "https://navyaandharish.vercel.app/og.jpg",
+    "og:image:secure_url": "https://navyaandharish-kappa.vercel.app/og.jpg",
     "og:image:type": "image/jpg",
   },
 };
