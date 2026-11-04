@@ -7,7 +7,7 @@ export default function ThankYouPage() {
           ♥
         </div>
 
-        <h1 className="mb-4 font-cormorant-upright text-5xl font-normal text-[#870b25]">
+        <h1 className="mb-4 font-cormorant-garamond text-5xl font-normal text-[#870b25]">
           Thank You!
         </h1>
 

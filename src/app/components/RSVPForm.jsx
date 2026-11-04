@@ -236,7 +236,7 @@ export default function RSVPForm() {
 
             <h3
               id="rsvp-success-title"
-              className="mb-2 font-['Great_Vibes',cursive] text-4xl font-normal text-[#870b25]"
+              className="mb-2 font-cormorant-garamond text-4xl font-normal text-[#870b25]"
             >
               Thank You!
             </h3>
